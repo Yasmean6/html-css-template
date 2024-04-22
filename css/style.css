@@ -135,16 +135,16 @@ header{
     align-items: center;
     top:0;
     left:0;
-    padding: 12px 0px;
+    padding: 5px 0px;
     box-shadow: 0px 5px 20px rgba(130, 125, 125, 0.217) ;
-    overflow: hidden;
 }
 
-header .blog{
+header #blog{
     position: relative;
 }
 
-header .blog::after{
+header #blog::after{
+z-index:10000;
     content: 'Blog Post';
     width:130px;
     height:45px;
@@ -160,7 +160,7 @@ header .blog::after{
     border-radius: 10px;
 }
 
-header .blog:hover::after{
+header #blog:hover::after{
     visibility: visible;
     opacity: 1;
 }
